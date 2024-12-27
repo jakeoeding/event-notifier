@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
-puts "hello world"
+require_relative "../lib/event_service"
 
-`bundle install`
+events = EventService.fetch_events
+puts events
