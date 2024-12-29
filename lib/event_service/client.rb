@@ -49,7 +49,7 @@ module EventService
     end
 
     def beginning_of_day_utc_iso8601
-      now_eastern = TZInfo::Timezone.get('America/New_York').now
+      now_eastern = TZInfo::Timezone.get("America/New_York").now
       midnight_eastern = Time.new(now_eastern.year, now_eastern.month, now_eastern.day, 0, 0, 0, now_eastern.utc_offset)
       midnight_eastern.utc.strftime("%Y-%m-%dT%H:%M:%S.000Z")
     end

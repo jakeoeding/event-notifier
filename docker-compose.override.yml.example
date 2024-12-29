@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  app:
+    environment:
+      PUSHOVER_USER_KEY: your_user_key
+      PUSHOVER_API_TOKEN: your_api_token
