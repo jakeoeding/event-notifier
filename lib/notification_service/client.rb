@@ -9,7 +9,7 @@ module NotificationService
         user: ENV["PUSHOVER_USER_KEY"],
         message: build_message(events)
       })
-      puts response.body
+      response.code == 200
     end
 
     private
