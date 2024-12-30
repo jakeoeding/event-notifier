@@ -1,0 +1,10 @@
+.dockerignore
+docker-compose.*
+Dockerfile
+
+.git
+.gitignore
+
+.github
+
+.ruby-lsp
