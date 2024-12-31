@@ -3,7 +3,7 @@ name: Scheduled Job
 on:
   workflow_dispatch:
   schedule:
-    - cron: '* 13 * * *'
+    - cron: '0 13 * * *'
 
 jobs:
   event_alert:
