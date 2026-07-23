@@ -15,7 +15,7 @@ module NotificationService
     private
 
     def build_message(events)
-      events_message = events.map { |event| format_message(event) }.join("\n")
+      events_message = events.map(&method(:format_message)).join("\n")
 
       "Today's event(s):\n#{events_message}"
     end
